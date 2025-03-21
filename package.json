@@ -1,0 +1,20 @@
+{
+  "name": "discord-nl-app",
+  "version": "1.0.0",
+  "description": "NoLimits discord application",
+  "homepage": "https://github.com/ToPin060/discord-nl-app#readme",
+  "bugs": {
+    "url": "https://github.com/ToPin060/discord-nl-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToPin060/discord-nl-app.git"
+  },
+  "license": "MIT",
+  "author": "ToPin060",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

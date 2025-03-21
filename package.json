@@ -12,9 +12,26 @@
   },
   "license": "MIT",
   "author": "ToPin060",
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
+  "main": "npm run build && npm run start",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "clean": "rm -rf dist/",
+    "dev": "tsx watch src/scripts/launch.ts",
+    "prestart": "npm run clean && npm run build",
+    "start": "node dist/scripts/launch.js",
+    "predeploy": "npm run clean && npm run build",
+    "deploy": "node dist/scripts/deploy.js"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
   }
 }

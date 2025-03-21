@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    // Project options
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "outDir": "dist",
+    "removeComments": true,
+    "target": "ESNext",
+    "module": "ESNext",
+
+    // Module resolution
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "paths": {},
+
+    // Source Map
+    "sourceMap": true,
+    "sourceRoot": "/",
+
+    // Strict Checks
+    "alwaysStrict": true,
+    "allowUnreachableCode": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+
+    // Linter Checks
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+
+  "include": ["./**/*.ts"],
+  "exclude": [
+    "node_modules/**/*"
+  ]
+}
